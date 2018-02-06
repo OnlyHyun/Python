@@ -13,13 +13,19 @@
 - 4. 파이썬은 간결하다
 
 
-		languages = ['python', 'perl', 'c', 'java']
-			
-		for lang in languages:
-		    if lang in ['python', 'perl']:
-		        print("%6s need interpreter" % lang)
-		    elif lang in ['c', 'java']:
-		        print("%6s need compiler" % lang)
-		    else:
-		        print("should not reach here")
-		> 보이듯이 괄호 문자가 보이지 않고 줄을 맞춰야 실행이 되기에 줄이 잘 맞는 것을 볼 수 있다.
+    languages = ['python', 'perl', 'c', 'java']
+    for lang in languages:
+        if lang in ['python', 'perl']:
+            print("%6s need interpreter" % lang)
+        elif lang in ['c', 'java']:
+            print("%6s need compiler" % lang)
+        else:
+            print("should not reach here")
+    > 보이듯이 괄호 문자가 보이지 않고 줄을 맞춰야 실행이 되기에 줄이 잘 맞는 것을 볼 수 있다.
+
+## 3. 파이썬 기초 실습
+
+### 반복문 for
+
+    for a in [1, 2, 3]:
+        print(a)
