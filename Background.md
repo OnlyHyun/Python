@@ -12,13 +12,14 @@
 > 오픈 소스란 저작권자가 소스 코드를 공개하여 누구나 별다른 제한 없이 자유롭게 사용,복제,배포,수정할 수 있는 소프트웨어이다. 
 - 4. 파이썬은 간결하다
 
-	languages = ['python', 'perl', 'c', 'java']
 
-	for lang in languages:
-	    if lang in ['python', 'perl']:
-	        print("%6s need interpreter" % lang)
-	    elif lang in ['c', 'java']:
-	        print("%6s need compiler" % lang)
-	    else:
-	        print("should not reach here")
-	> 보이듯이 괄호 문자가 보이지 않고 줄을 맞춰야 실행이 되기에 줄이 잘 맞는 것을 볼 수 있다.
+		languages = ['python', 'perl', 'c', 'java']
+			
+		for lang in languages:
+		    if lang in ['python', 'perl']:
+		        print("%6s need interpreter" % lang)
+		    elif lang in ['c', 'java']:
+		        print("%6s need compiler" % lang)
+		    else:
+		        print("should not reach here")
+		> 보이듯이 괄호 문자가 보이지 않고 줄을 맞춰야 실행이 되기에 줄이 잘 맞는 것을 볼 수 있다.
