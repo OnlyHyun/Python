@@ -28,17 +28,17 @@
 
 1. 문자열에 작은 따옴표를 포함시키는 방법은 문자열을 큰 따옴표로 둘러싸는 것이다
 
-    >>> food = "Python's favorite food is perl"
+    > food = "Python's favorite food is perl"
     
 
 2. 문자열에 큰 따옴표를 포함시키는 방법은 문자열을 작은 따옴표로 둘러싸는 것이다.
 
-    >>> say = '"Python is very easy." he says."
+    > say = '"Python is very easy." he says."
     
 3. \(백슬래시)를 이용하는 것이다.
 
-    >>> food = 'Python\'s favorite food is perl'
-    >>> say = "\"Python is very easy.\" he says."
+    > food = 'Python\'s favorite food is perl'
+    > say = "\"Python is very easy.\" he says."
 
     그냥 편하게 1, 2번 방법을 사용하도록 하자
 
@@ -47,4 +47,4 @@
 1. 줄을 바꾸기 위한 이스케이프 코드 \n 삽입하기
 
 
-    >>
+    >
