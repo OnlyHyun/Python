@@ -30,3 +30,19 @@
     for a in [1, 2, 3]:
         print(a)
 
+### 반복문 while
+	i = 0
+	while i < 3:
+	     i=i+1
+	     print(i)
+
+### 함수 만들기
+
+파이썬의 함수는 다음과 같은 형태이다.
+
+	 def sum(a, b):
+	     return a+b
+
+	 print(sum(3,4))
+
+> def 를 이용해 함수를 만들어 사용할 수 있다
