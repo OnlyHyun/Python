@@ -1,4 +1,3 @@
-
 # Python Background
 ---
 ## 1.파이썬이란?
