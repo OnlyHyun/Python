@@ -40,13 +40,14 @@
 	food = 'Python\'s favorite food is perl'
 	say = "\"Python is very easy.\" he says."
 
-    	그냥 편하게 1, 2번 방법을 사용하도록 하자
+	> 그냥 편하게 1, 2번 방법을 사용하도록 하자
 
 ### 여러 줄인 문자열을 변수에 대입하고 싶을 때
 
 1. 줄을 바꾸기 위한 이스케이프 코드 \n 삽입하기
 
 	multiline = "Life is too short\nYou need python"
+	
 	> 아무래도 읽기 불편하고 성가시다
 	
 
@@ -85,4 +86,13 @@
 	\b - 백 스페이스
 	\000 - 널문자
 
+### 문자열 연산하기
+
+1. 문자열 더해서 연결하기
+
+	head = "Python"
+	tail = " is fun!"
+	print(head + tail)
+	
+	'Python is fun!'
 
