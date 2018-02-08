@@ -224,3 +224,119 @@
 	> 1. 유의할 점은 %를 표시하고 싶다면 %%를 이용해야 한다는 것이다
 	> 2. %s 포맷 코드는 어떤 형태의 값이든 변환해 넣을 수 있다.(정수든 소수든 문자열로 표현)
 
+### 포맷 코드와 숫자 함께 사용하기
+
+1. 정렬과 공백
+
+	print("%10s" % "hi")
+
+	'        hi'
+
+	print("%-10sjane" % "hi")
+ 	
+	'hi          jane'
+
+2. 소수점 표현하기
+
+	print("%0.4f" % 3.42134234)
+
+	'3.4213'
+
+	print("%10.4f" % 3.42134234)
+
+	'    3.4213'
+
+### 문자열 관련 함수들
+
+1. 문자 개수 세기(count)
+
+	a = "hobby"
+	print(a.count('b'))
+
+	2
+
+2. 위치 알려주기1(find)
+
+	a = "Python is best choice"
+	print(a.find('b'))
+
+	10
+
+	> 문자가 처음으로 나온 위치를 반환한다. 존재하지 않는다면 -1을 반환한다.
+
+3. 위치 알려주기2(index)
+
+	a = "Life is too short"
+	print(a.index('t'))
+
+	8
+
+	> 문자가 처음으로 나온 위치를 반환한다. 존재하지 않는다면 오류가 발생한다.
+
+4. 문자열 삽입
+
+	a = ","
+	print(a.join('abcd'))
+
+	'a,b,c,d'
+
+	> abcd라는 문자열의 각각의 문자 사이에 변수 a의 값인 ','를 삽입한다.
+
+5. 소문자를 대문자로 바꾸기(upper)
+
+	a = "hi"
+	print(a.upper())
+
+	'HI'
+
+6. 대문자를 소문자로 바꾸기(lower)
+
+	a = "HI"
+	print(a.lower())
+
+	'hi'
+
+7. 왼쪽 공백 지우기(lstrip)
+
+	a = " hi "
+	print(a.lstrip())
+	
+	'hi '
+
+8. 오른쪽 공백 지우기(rstrip)
+
+	a = " hi "
+	print(a.rstrip())
+
+	' hi'
+
+9. 양쪽 공백 지우기(strip)
+
+	a = " hi "
+	print(a.strip())
+
+	'hi'
+
+10. 문자열 바꾸기(replace)
+
+	a = "Life is too short"
+	print(a.replace("Life", "Your leg")
+
+	'Your leg is too short'
+
+11. 문자열 나누기(split)
+
+	a = "Life is too short"
+	print(a.split())
+	
+	['Life', 'is', 'too', 'short']
+	
+	> split 함수에 아무런 값을 넣어 주지 않으면 공백을 기준으로 문자열을 나누어 준다.
+
+	print(a.split(':'))
+	
+	['a', 'b', 'c', 'd']
+
+	> 괄호 안에 특정한 값이 있을 경우에는 괄호 안의 값을 구분자로 해서 문자열을 나누어 준다.
+	
+
