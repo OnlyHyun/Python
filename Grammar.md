@@ -180,3 +180,36 @@
 
 	> 수정할 부분이 양쪽으로 나눠지기 때문에 그 사이에 'y'라는 문자를 추가하여 새로운 문자열을 만들 수 있다.
 
+### 문자열 포매팅
+
+    > 문자열 내에 어떤 값을 삽입하는 것이다.
+
+1. 숫자 바로 대입
+
+	print("I eat %d apples." % 3)
+	
+	'I eat 3 apples.'
+
+2. 문자열 바로 대입
+
+	print("I eat %s apples." % "five")
+
+	'I eat five apples.'
+
+3. 숫자 값을 나타내는 변수로 대입
+
+	number = 3
+	print("I eat %d apples." % number)
+
+	'I eat 3 apples.'
+
+4. 2개 이상의 값 넣기
+
+	number = 10
+	day = "three"
+	print("I ate %d apples. so I was sick for %s days." % (number, day))
+	
+	'I ate 10 apples. so I was sick for three days.'
+
+### 문자열 포맷 코드
+
