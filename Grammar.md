@@ -28,23 +28,61 @@
 
 1. 문자열에 작은 따옴표를 포함시키는 방법은 문자열을 큰 따옴표로 둘러싸는 것이다
 
-    > food = "Python's favorite food is perl"
+	food = "Python's favorite food is perl"
     
 
 2. 문자열에 큰 따옴표를 포함시키는 방법은 문자열을 작은 따옴표로 둘러싸는 것이다.
 
-    > say = '"Python is very easy." he says."
+	say = '"Python is very easy." he says."
     
 3. \(백슬래시)를 이용하는 것이다.
 
-    > food = 'Python\'s favorite food is perl'
-    > say = "\"Python is very easy.\" he says."
+	food = 'Python\'s favorite food is perl'
+	say = "\"Python is very easy.\" he says."
 
-    그냥 편하게 1, 2번 방법을 사용하도록 하자
+    	그냥 편하게 1, 2번 방법을 사용하도록 하자
 
 ### 여러 줄인 문자열을 변수에 대입하고 싶을 때
 
 1. 줄을 바꾸기 위한 이스케이프 코드 \n 삽입하기
 
+	multiline = "Life is too short\nYou need python"
+	> 아무래도 읽기 불편하고 성가시다
+	
 
-    >
+2. 연속된 작은 따옴표 3개(''') 또는 큰 따옴표 3개(""") 이용
+
+	1) 작은 따옴표 3개 사용
+
+	multiline = '''
+	Life is too short
+	You need python
+	'''
+	print(multiline)	
+	
+	2) 큰 따옴표 3개 사용
+	
+	Multiline = """
+	Life is too short
+	You need python
+	"""
+	print(multiline)		
+
+
+### 이스케이프 코드란?
+
+> 이스케이프 코드란 프로그래밍할 때 사용할 수 있도록 미리 정의해 둔 "문자 조합"이다.
+주로 출력물을 보기 좋게 정렬하는 용도로 사용된다.
+
+	\n - 개행(줄바꿈)
+	\t - 수평 탭
+	\\ - 문자 "\"
+	\' - 단일 인용부호(')
+	\" - 이중 인용부호(")
+	\r - 캐리지 리턴
+	\f - 폼 피드
+	\a - 벨 소리
+	\b - 백 스페이스
+	\000 - 널문자
+
+
