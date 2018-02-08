@@ -96,3 +96,25 @@
 	
 	'Python is fun!'
 
+	> 매우 간단 그냥 숫자 더하듯이 + 해주면 된다
+
+2. 문자열 곱하기
+
+	a = "Python"
+	print(a * 2)
+	
+	'PythonPython'
+
+	> 일반적으로 생각하듯이 문자열을 몇 번 반복하라는 의미로 사용된다.
+
+### 문자열 인덱싱
+
+    > 문자열 인덱싱이란 무엇인가를 "가리킨다"라는 뜻이다.
+
+	a = "Life is too short, You need Python"
+	
+	Life is too short, You need Python
+	0	  1	    2	      3
+	0123456789012345678901234567890123
+	
+	
