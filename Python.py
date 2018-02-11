@@ -1,54 +1,41 @@
-"""
+a = [1, 2, 3, 4]
+while a:
+    print(a.pop())
+print(type(3))
 
-## 숫자 연산
+a = 3
+b = 3
+print(a is b)
 
-1. 사칙연산은 +, -, *, / 를 사용한다
+import sys
+print(sys.getrefcount(3))
 
-2. 제곱하는 연산은 ** 을 사용한다
+a, b = ('python', 'life' )
+print(a,"\n",b)
 
-3. 나눗셈 후 나머지를 반환하는 연산자는 %를 사용한다
+[a, b] = ['python', 'life']
+print(a, b)
 
-4. 나눗셈 후 소수점 아랫자리를 버리는 연산자는 //를 사용한다
-   > 이 때 음수 -1.75를 //하게 되면 -2 값이 나오게 되는 점에 유의
+a = b = 'Python'
+print(a, b)
 
-## 문자열
+a, b = 1, 2
+print(a, b)
 
-### 문자열을 만드는 방식은 총 4가지 방법이 있다
+a, b = b, a
+print(a, b)
 
-1. 큰 따옴표
+a = [1, 2, 3]
+b = a
+a[1] = 4
+print(a)
+print(b)
 
-2. 작은 따옴표
+b = a[:]
+a[1] = 2
+print(a,"\n",b)
 
-3. 큰 따옴표 3개를 연속으로 써서 둘러싸기
+from copy import copy
+b = copy(a)
 
-4. 작은 따옴표 3개를 연속으로 써서 양쪽 둘러싸기
-
-
-### 문자열 안에 작은 따옴표나 큰 따옴표를 포함시키고 싶을 때 쓰는 방법은 3가지 방법이 있다
-
-1. 문자열에 작은 따옴표를 포함시키는 방법은 문자열을 큰 따옴표로 둘러싸는 것이다
-
-    >>> food = "Python's favorite food is perl"
-    
-
-2. 문자열에 큰 따옴표를 포함시키는 방법은 문자열을 작은 따옴표로 둘러싸는 것이다.
-
-    >>> say = '"Python is very easy." he says."
-    
-3. \(백슬래시)를 이용하는 것이다.
-
-    >>> food = 'Python\'s favorite food is perl'
-    >>> say = "\"Python is very easy.\" he says."
-
-    그냥 편하게 1, 2번 방법을 사용하도록 하자
-
-### 여러 줄인 문자열을 변수에 대입하고 싶을 때
-
-1. 줄을 바꾸기 위한 이스케이프 코드 \n 삽입하기
-
-
-    >>
-
-"""
-food = 'Python\'s favorite food is perl'
-print(food)
+print(a is b)
