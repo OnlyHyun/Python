@@ -36,3 +36,35 @@ print(naver_end_price2["09/09"])
 
 for key, name in naver_end_price2.items():
     print(key, name)
+
+
+for i in range(0,5):
+    print("*", end = " ")
+print(" ")
+
+for i in range(0, 4):
+    for j in range(0, 5):
+        print("*", end = " ")
+    print(" ")
+
+
+""" 반복 횟수 1,2,3,4,5 """
+
+for i in range(1, 6):
+    for j in range(0, i):
+        print("*", end = " ")
+    print(" ")
+
+
+for i in range(1, 6):
+    for j in range(0, 6-i):
+        print("*", end = " ")
+    print(" ")
+
+
+for i in range(1, 6):
+    for j in range(0, 5-i):
+        print(" ", end = " ")
+    for j in range(0, i):
+        print("*", end = " ")
+    print(" ")
