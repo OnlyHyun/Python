@@ -94,10 +94,13 @@ for i in range(0, 5):
         print(" ", end = " ")
     print(" ")
 
+apart = [[101, 102, 103, 104], [201, 202, 203, 204], [301, 302, 303, 304], [401, 402, 403, 404]]
+arrears = [101, 203, 301, 404]
 
-
-4, 1, 4
-3, 3, 3
-2, 5, 2
-1, 7, 1
-0, 9, 0
+for i in range(0, 4):
+    for j in range(0, 4):
+        if(apart[i][j] not in arrears):
+            print(apart[i][j], "배달 완료", end = " ")
+        else:
+            print(apart[i][j], "구독료 미납", end = " ")
+    print(" ")
