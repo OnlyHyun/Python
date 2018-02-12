@@ -1,46 +1,45 @@
-def sum(a, b):
-    return a+b
+print("주식은 대박이다.")
+print("I love 'you'")
+print("I like you")
+print('Korea')
 
-a = b = 10
+def sum(Daum, Dnumber, Naver, Nnumber):
+    return Daum * Dnumber + Naver * Nnumber
 
-c = sum(a, b)
+total = sum(89000, 100, 751000, 20)
 
-print(c)
-
-
-def say():
-    return 'Hi'
-
-print(say())
-
-def sum_many(*args):
-    sum = 0
-    for i in args:
-        sum += i
-    return sum
-
-a = sum_many(1, 2, 3, 4, 5, 6, 7)
-
-print(a)
-
-def say_myself(name, old, man=True):
-    print("나의 이름은 %s 입니다." % name)
-    print("나이는 %d 살입니다." % old)
-    if man:
-        print("남자입니다.")
-    else:
-        print("여자입니다.")
+print(total, '원')
 
 
+Daum = int(input("다음의 주가는? :"))
+Dnumber = int(input("다음 주식 보유숫자는? :"))
+Dtotal = Daum * Dnumber
 
-say_myself('현수', 25)
-say_myself('현수', 25, True)
-say_myself('현수', 25, False)
+Naver = int(input("네이버의 주가는? :"))
+Nnumber = int(input("네이버 주식 보유숫자는? :"))
+Ntotal = Naver * Nnumber
 
-a = "현수"
-b = "바보"
+total = Daum * Dnumber + Naver * Nnumber
 
-print(a, b,'\n', a,b)
+print(total, "원")
 
-for i in range(0, 11):
-    print(i, end=' ')
+lose = Dtotal- Dtotal*0.95 + Ntotal - Ntotal*0.9
+
+print(lose)
+
+
+F = 50
+C = (F-32)/1.8
+
+print(C)
+
+print("Pizza"*10)
+
+Ntotal = 1000000
+
+Ntotal = Ntotal*(0.7**3)
+
+
+
+
+print(Ntotal)
