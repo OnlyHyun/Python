@@ -1,45 +1,38 @@
-print("주식은 대박이다.")
-print("I love 'you'")
-print("I like you")
-print('Korea')
+s = "Daum KaKao"
 
-def sum(Daum, Dnumber, Naver, Nnumber):
-    return Daum * Dnumber + Naver * Nnumber
+print(s)
 
-total = sum(89000, 100, 751000, 20)
+a = s[0:4]
+b = s[5:]
 
-print(total, '원')
+s = b + a
 
+print(s)
 
-Daum = int(input("다음의 주가는? :"))
-Dnumber = int(input("다음 주식 보유숫자는? :"))
-Dtotal = Daum * Dnumber
+a = "Hello world"
 
-Naver = int(input("네이버의 주가는? :"))
-Nnumber = int(input("네이버 주식 보유숫자는? :"))
-Ntotal = Naver * Nnumber
+a = "hi world"
 
-total = Daum * Dnumber + Naver * Nnumber
+print(a)
 
-print(total, "원")
+x = "abcdef"
 
-lose = Dtotal- Dtotal*0.95 + Ntotal - Ntotal*0.9
+x = 'bcdefa'
 
-print(lose)
+print(x)
 
+naver_end_price = [['09/07', "월", 474500], ['09/08', "화", 461500], ['09/09', "수", 501000], ['09/10', "목", 500500], ['09/11', "금", 488500]]
 
-F = 50
-C = (F-32)/1.8
-
-print(C)
-
-print("Pizza"*10)
-
-Ntotal = 1000000
-
-Ntotal = Ntotal*(0.7**3)
+print(naver_end_price[1])
+print(max(naver_end_price))
+print(min(naver_end_price))
+print("수요일 종가는", naver_end_price[2][2])
 
 
+naver_end_price2 = {"09/07":474500, "09/08":461500, "09/09":501000, "09/10":500500, "09/11":488500}
+
+print(naver_end_price2["09/09"])
 
 
-print(Ntotal)
+for key, name in naver_end_price2.items():
+    print(key, name)
