@@ -16,3 +16,15 @@ for i in range(1, 1000):
         sum += i
 
 print(sum)
+
+import math
+
+def getTotalPage(m, n):
+    page = math.ceil(m/n)
+    return page
+
+print((getTotalPage(5, 10)))
+print((getTotalPage(15, 10)))
+print((getTotalPage(25, 10)))
+print((getTotalPage(30, 10)))
+
