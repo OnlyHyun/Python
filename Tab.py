@@ -10,3 +10,7 @@ f.close()
 
 change = cab.replace("\t", " "*8)
 print(change)
+
+f = open(trans, 'w')
+f.write(change)
+f.close()
