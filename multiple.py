@@ -12,12 +12,14 @@ for i in range(10, 1001):
     sum1 += sum[i]
 
 print(sum1)
+
 """
+
 print(sum(eval('*'.join(str(x))) for x in range(10,1001)))
 
-어딘가에 list형을 집어넣어서 변형?씨켜줘야하는디...
-"""
+내포문으로는 어떻게 맞춰서 변형시킬 지 모르겠음
 
+"""
 y = 0
 
 for x in range(10, 1001):
