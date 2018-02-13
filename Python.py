@@ -101,7 +101,7 @@ for i in range(0, 4):
             print(apart[i][j], "구독료 미납", end = " ")
     print(" ")
 
-f = open("C:\Users\Hyun\Python\ha.txt", 'w')
+f = open("C:\Users\Hyun\Python\Go.md", 'w')
 for i in range(1, 11):
     data = "%d번째 줄입니다.\n" % i
     f.write(data)
