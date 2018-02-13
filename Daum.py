@@ -1,10 +1,23 @@
 s = [1, 3, 4, 8, 13, 17, 20]
 
-print(min(s))
+s = sorted(s)
 
-min_length = max(s) - min(s)
 min = max(s)
 
+i=0
+
+while True:
+    length = int(s[i+1]) - int(s[i])
+    if(min > length):
+        min_length = [s[i], s[i+1]]
+        min = length
+    i+=1
+    if(len(s) == i+1): break
+
+print(min_length)
+
+    
+"""
 for i in range(len(s)):
     for j in range(i+1, len(s)):
         length = abs(s[i] - s[j])
@@ -13,6 +26,8 @@ for i in range(len(s)):
             min = length
 
 print(min_length)            
+
+"""
 
 
 """
