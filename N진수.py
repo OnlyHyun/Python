@@ -15,7 +15,7 @@ def switch(num):
         13: 'D',
         14: 'E',
         15: 'F'
-        }.get(num, 10)
+        }.get(num)
 
 Share = int(input("변환할 10진수는?: "))
 n = int(input("변환하고 싶은 n진수는?: "))
