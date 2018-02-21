@@ -28,3 +28,4 @@ for i in range(1, len(S), 2):
         S[i] = "*"
 
 print("".join(S))
+
