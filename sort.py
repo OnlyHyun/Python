@@ -16,6 +16,9 @@
 자기가 들어가야 할 위치 파악
 
 """
+"""
+풀이 1)
+"""
 
 n = list(map(int, str(input("배열을 입력하라: ")).split()))
 
@@ -26,7 +29,23 @@ for i in range(1, len(n)):
         else: break
     n.insert(i-c, n[i])
     del n[i+1]
-    
-print(n)
+    print(n)    
 
+"""
+풀이 2)
 
+n = list(map(int, str(input("배열을 입력하라: ")).split()))
+
+for i in range(1, len(n)):
+    c = 0
+    for j in range(i-1, -1, -1):
+        if(n[i] < n[j]): c += 1
+        else: break
+
+    k = n[i]
+    for j in range(i-1, i-c-1, -1):
+        n[j+1] = n[j]
+            
+    n[i-c] = k
+    print(n)
+"""
