@@ -1,3 +1,4 @@
+"""
 S = ['a1','a2','a3','a4','a5','b1','b2','b3','b4','b5']
 S1 = [ 0 for i in range(0, len(S)) ]
 S2 = []
@@ -21,3 +22,15 @@ for i in range(0, count+1):
     S2.append(S[i])
 
 print(S2)
+"""
+
+S = ['a1','a2','a3','a4','a5','b1','b2','b3','b4','b5']
+S1 = []
+
+n = int(len(S)/2)
+
+for i in range(0, n):
+    S1.append(S[i])
+    S1.append(S[n+i])
+
+print(S1)
