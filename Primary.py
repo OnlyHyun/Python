@@ -44,10 +44,10 @@ while True:
         S[0] /= 10
         if(S[0]%10 == 9): count += 1
 
-    if(count == 0 ):
-        print("No carry operation")
+    if count:
+        print("%d carry operation" % count)
     else:
-        print("%d carry operation" % count)            
+        print("No carry operation")            
 
 
     
