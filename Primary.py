@@ -7,20 +7,47 @@
 
 자릿 수가 어떤 놈들이 더 큰지?
 -1부터 끝까지 해서
+
+--> 그럴 필요 없음 그냥 무한루프에다가 %10 해서 깎은 거 넣어주면 됨
+
+긴 놈 기준으로 해야 하나?
+
+  
+2가 되는 거잖냐? 예외 처리 해야 하나? 
+
+
+
 """
 
 while True:
 
-    S = list(input("양의 정수 두 개를 입력하시오: "))
+    S = list(map(int, input("양의 정수 두 개를 입력하시오: ").split()))
+
+    if(S[0] == 0 and S[1] == 0): break
+    s0, s1 = len(str(S[0])), len(str(S[1]))
     
-    if(int(S[0]) == 0 and int(S[1]) == 0): break
+    
+    if(s0 < s1):
+        min, S[0], S[1] = s1, S[1], S[0]
+    else: min = s0
+    count = 0
+
+
+    for i in range(0,min-1):
+        if(S[0]%10 + S[1]%10 > 9):
+            count += 1
+        S[0] /= 10
+        S[1] /= 10
+
+    if(S[0]%10 + S[1]%10 > 9):
+        count += 1
+        S[0] /= 10
+        if(S[0]%10 == 9): count += 1
+
+    if(count == 0 ):
+        print("No carry operation")
     else:
+        print("%d carry operation" % count)            
 
-        if(len(S[1]) > len(S[0]):
-           S[0], S[1] = S[1], S[0]
 
-        for i in range(
-        
-        
-        
-        print("%d carry operations." %)
+    
